@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="bg-white px-10 py-5 shadow-lg relative">
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+        <!-- SIDEBAR MOBILE -->
+        <nav class="block md:hidden fixed left-0 top-0 w-full h-[220px] bg-white shadow-lg transform -translate-y-full 
+                   peer-checked:translate-y-[43%] transition-all duration-500 z-50">
+
+            <ul class="flex flex-col space-y-5 p-6 font-medium">
+                <li>
+                    <a href="./index.html" class="hover:underline hover:text-red-600">Home</a>
+                </li>
+                <li>
+                    <a href="./shop.html" class="hover:underline hover:text-red-600">Shop</a>
+                </li>
+                <li>
+                    <a href="./post.html" class="hover:underline hover:text-red-600">Post</a>
+                </li>
+                <li>
+                    <a href="./cont.html" class="hover:underline hover:text-red-600">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="flex md:hidden justify-between font-bold text-3xl relative z-20">
+            <h1>BOOTIN</h1>
+
+            <label for="menu-toggle" class="cursor-pointer">
+                <i class="bi bi-list text-5xl"></i>
+            </label>
+        </div>
+
+
+        <div class="hidden md:block">
+
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-1.5 border-b">
+                    <input type="search" placeholder="Search books.." class="p-3 outline-none">
+                    <i class="bi bi-search"></i>
+                </div>
+                <h1 class="font-bold text-3xl">BOOTIN</h1>
+
+                <div class="flex gap-1.5 font-semibold">
+                    <div class="relative border-r pr-4 mr-4">
+                        <i class="bi bi-heart text-xl"></i>
+                        <p
+                            class="bg-red-600 w-[22px] rounded-full text-center text-sm text-white absolute bottom-[21px] right-[3px]">
+                            3</p>
+                    </div>
+                    <div class="relative border-r pr-4 mr-4">
+                        <i class="bi bi-bookmark text-xl"></i>
+                        <p
+                            class="bg-red-600 w-[22px] rounded-full text-center text-sm text-white absolute bottom-[21px] right-[3px]">
+                            0</p>
+                    </div>
+                    <i class="bi bi-person-fill text-xl"></i>
+                </div>
+            </div>
+
+            <nav class="flex justify-center w-full mt-10 text-lg text-gray-700 font-medium">
+                <ul class="flex space-x-7">
+                    <li>
+                        <a href="./index.html" class="hover:underline hover:text-red-600">Home</a>
+                    </li>
+                    <li>
+                        <a href="./shop.html" class="hover:underline hover:text-red-600 underline text-red-600"
+                            aria-current="page">Shop</a>
+                    </li>
+                    <li>
+                        <a href="./post.html" class="hover:underline hover:text-red-600">Post</a>
+                    </li>
+                    <li>
+                        <a href="./cont.html" class="hover:underline hover:text-red-600">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+        <section class="relative h-[200px] lg:h-full border-t border-black">
+            <img src="./img/bg.jpg" alt="" class="w-full h-full object-center object-cover">
+
+            <h2 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-white">
+                Shop
+            </h2>
+        </section>
+
+
+        <section class="p-10">
+            <div class="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-10">
+                <aside class="w-[280px] lg:w-full space-y-10 order-2 lg:order-1">
+                    <div class="flex w-full max-w-sm border-b shadow-sm mb-8">
+                        <input type="search" placeholder="Search books..." class="p-3 outline-none w-full">
+                        <div class="p-3 bg-red-500 text-white">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-semibold">Catégories</h2>
+                        <hr class="border-red-400 w-[60px] my-4">
+                        <div class="space-y-2 text-gray-700">
+                            <p>Business (3)</p>
+                            <p>Classic (7)</p>
+                            <p>Drama (2)</p>
+                            <p>For Kid (13)</p>
+                            <p>Horror (16)</p>
+                            <p>Loved (1)</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-semibold">Price</h2>
+                        <hr class="border-red-400 w-[60px] my-4">
+                        <input type="range" class="w-full">
+                        <div class="flex justify-between text-sm mt-2">
+                            <p>2 400 F CFA</p>
+                            <p>23 400 F CFA</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-semibold">Author</h2>
+                        <hr class="border-red-400 w-[60px] my-4">
+                        <div class="space-y-2">
+                            <label class="flex gap-2"><input type="checkbox"> Anna Hillton (3)</label>
+                            <label class="flex gap-2"><input type="checkbox"> Anna Hillton (4)</label>
+                            <label class="flex gap-2"><input type="checkbox"> Coco Simon (2)</label>
+                            <label class="flex gap-2"><input type="checkbox"> Nicolas Sumpir (3)</label>
+                            <label class="flex gap-2"><input type="checkbox"> Sabela Hupter (7)</label>
+                            <label class="flex gap-2"><input type="checkbox"> Sussin Merrlin (4)</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-semibold">Tags</h2>
+                        <hr class="border-red-400 w-[60px] my-4">
+                        <div class="grid grid-cols-3 gap-3 text-sm">
+                            <span class="border px-3 py-2">Classic</span>
+                            <span class="border px-3 py-2">Horror</span>
+                            <span class="border px-3 py-2">Kids</span>
+                            <span class="border px-3 py-2">Men</span>
+                            <span class="border px-3 py-2">Trend</span>
+                            <span class="border px-3 py-2">Woman</span>
+                        </div>
+                    </div>
+
+                </aside>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 border-b pb-14 order-1">
+
+                    <!-- CARD -->
+                    <div class="w-full">
+                        <img src="./img/liv1.png" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                    <div class="w-full">
+                        <img src="./img/liv2.png" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                    <div class="w-full">
+                        <img src="./img/liv3.webp" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                    <div class="w-full">
+                        <img src="./img/livre1.png" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                    <div class="w-full">
+                        <img src="./img/livre2.png" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                    <div class="w-full">
+                        <img src="./img/livre3.png" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                    <div class="w-full">
+                        <img src="./img/livre4.png" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                    <div class="w-full">
+                        <img src="./img/livre5.png" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                    <div class="w-full">
+                        <img src="./img/livre2.png" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                    <div class="w-full">
+                        <img src="./img/spec1.png" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                    <div class="w-full">
+                        <img src="./img/spec2.png" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                    <div class="w-full">
+                        <img src="./img/spec3.png" alt="" class="w-40 lg:w-56 h-auto">
+                        <h3 class="text-xl font-semibold">The Book Mart</h3>
+                        <p class="text-sm text-gray-500">Classic Literature</p>
+                        <p class="text-red-600 font-semibold">19 400 F CFA</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="flex items-center gap-3 justify-center m-20">
+                <div class="py-3 px-5 border bg-red-500 text-white">1</div>
+                <div class="py-3 px-5 border hover:bg-red-500 hover:text-white">2</div>
+                <div class="py-3 px-5 border hover:bg-red-500 hover:text-white">3</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:space-x-10 p-10 bg-gray-100">
+        <div class="space-y-1">
+            <div class="mb-5">
+                <h3 class="text-xl font-medium">Contact us</h3>
+                <hr class="border border-red-500 w-[50px] mt-5">
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="bi bi-geo-alt-fill text-2xl"></i>
+                <p>1998 Well Street 707, <br> Washington DC, USA</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-envelope text-2xl"></i>
+                <div class="flex flex-col">
+                    <p>bookmart@domain.com</p>
+                    <p>support@gmail.com</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-phone text-2xl"></i>
+                <div class="flex flex-col">
+                    <p>(84) 0123 456 789</p>
+                    <p>(84) 00123 456 789</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <div>
+                <h3 class="text-xl font-medium">Information</h3>
+                <hr class="border border-red-500 w-[50px] mt-5">
+            </div>
+            <p>Contact Us</p>
+            <p>Site Map</p>
+            <p>Privacy Policy</p>
+            <p>About Us</p>
+            <p>Customer service</p>
+        </div>
+        <div class="space-y-4">
+            <div>
+                <h3 class="text-xl font-medium">My Account</h3>
+                <hr class="border border-red-500 w-[50px] mt-5">
+            </div>
+            <p>Sign In</p>
+            <p>View Cart</p>
+            <p>My Wishlist</p>
+            <p>Track My Order</p>
+            <p>Help</p>
+        </div>
+        <div class="space-y-4">
+            <div>
+                <h3 class="text-xl font-medium">Instagram</h3>
+                <hr class="border border-red-500 w-[50px] mt-5">
+            </div>
+            <div class="flex gap-5">
+                <img src="./img/ins1.png" alt="" class="w-24">
+                <img src="./img/ins2.png" alt="" class="w-24">
+                <img src="./img/ins3.png" alt="" class="w-24">
+            </div>
+            <p class="text-red-500">7 Days A Weeks From 8.00 Am To 5 Pm</p>
+            <div class="flex gap-5 text-3xl">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="bg-white px-10 py-5 shadow-lg relative">
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+        <!-- SIDEBAR MOBILE -->
+        <nav class="block md:hidden fixed left-0 top-0 w-full h-[220px] bg-white shadow-lg transform -translate-y-full 
+                   peer-checked:translate-y-[43%] transition-all duration-500">
+
+            <ul class="flex flex-col space-y-5 p-6 font-medium">
+                <li>
+                    <a href="./index.html" class="hover:underline hover:text-red-600">Home</a>
+                </li>
+                <li>
+                    <a href="./shop.html" class="hover:underline hover:text-red-600">Shop</a>
+                </li>
+                <li>
+                    <a href="./post.html" class="hover:underline hover:text-red-600">Post</a>
+                </li>
+                <li>
+                    <a href="./cont.html" class="hover:underline hover:text-red-600">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="flex md:hidden justify-between font-bold text-3xl relative z-20">
+            <h1>BOOTIN</h1>
+
+            <label for="menu-toggle" class="cursor-pointer">
+                <i class="bi bi-list text-5xl"></i>
+            </label>
+        </div>
+
+
+        <div class="hidden md:block">
+
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-1.5 border-b">
+                    <input type="search" placeholder="Search books.." class="p-3 outline-none">
+                    <i class="bi bi-search"></i>
+                </div>
+                <h1 class="font-bold text-3xl">BOOTIN</h1>
+
+                <div class="flex gap-1.5 font-semibold">
+                    <div class="relative border-r pr-4 mr-4">
+                        <i class="bi bi-heart text-xl"></i>
+                        <p
+                            class="bg-red-600 w-[22px] rounded-full text-center text-sm text-white absolute bottom-[21px] right-[3px]">
+                            3</p>
+                    </div>
+                    <div class="relative border-r pr-4 mr-4">
+                        <i class="bi bi-bookmark text-xl"></i>
+                        <p
+                            class="bg-red-600 w-[22px] rounded-full text-center text-sm text-white absolute bottom-[21px] right-[3px]">
+                            0</p>
+                    </div>
+                    <i class="bi bi-person-fill text-xl"></i>
+                </div>
+            </div>
+
+            <nav class="flex justify-center w-full mt-10 text-lg text-gray-700 font-medium">
+                <ul class="flex space-x-7">
+                    <li>
+                        <a href="./index.html" class="hover:underline hover:text-red-600 underline text-red-600" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="./shop.html" class="hover:underline hover:text-red-600">Shop</a>
+                    </li>
+                    <li>
+                        <a href="./post.html" class="hover:underline hover:text-red-600">Post</a>
+                    </li>
+                    <li>
+                        <a href="./cont.html" class="hover:underline hover:text-red-600">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="w-full h-full">
+        <section class="w-full h-full bg-[#f5f4ed] p-10">
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-[1fr_300px]">
+                <div class="flex justify-between items-center p-20 bg-[#dde8e6]">
+                    <div class="">
+                        <p class="text-xl text-red-400">Books Event 2019</p>
+                        <h2 class="text-3xl font-bold">SALE UP TO</h2>
+                        <h2 class="text-3xl font-bold">20% OFF</h2>
+                        <button class="px-4 py-2 bg-red-400 text-white font-medium rounded-md mt-2">Shop
+                            Now</button>
+                    </div>
+                    <img src="./img/book.png" alt="" class="w-[250px] h-[250px] object-cover">
+                </div>
+
+                <div class="bg-[#f2cbd1] w-full h-full">
+                    <div class="flex flex-col text-center p-12">
+                        <img src="./img/book2.png" alt="" class="h-full object-cover object-center">
+                        <button class="px-4 py-2 bg-green-400 text-white font-medium rounded-md mt-2">Sale
+                            -50%</button>
+                        <h2 class="text-3xl font-bold">Six Lettle Birds</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 w-full mt-5 gap-5 md:grid-cols-6 lg:grid-cols-5 lg:gap-10">
+                <div
+                    class="flex justify-center items-center gap-3 w-full border border-black py-4 px-12 group hover:bg-white hover:text-red-500 transition-all duration-200 ease-out hover:scale-105 md:col-span-2 lg:col-span-1">
+                    <div
+                        class="flex justify-center items-center w-12 h-12 bg-white group-hover:bg-red-500 group-hover:text-white border border-black rounded-full text-xl">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <p class="text-2xl font-medium">Classic</p>
+                </div>
+                <div
+                    class="flex justify-center items-center gap-3 w-full border border-black py-4 px-12 group hover:bg-white hover:text-red-500 transition-all duration-200 ease-out hover:scale-105 md:col-span-2 lg:col-span-1">
+                    <div
+                        class="flex justify-center items-center w-12 h-12 bg-white group-hover:bg-red-500 group-hover:text-white border border-black rounded-full text-xl">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <p class="text-2xl font-medium">Drama</p>
+                </div>
+                <div
+                    class="flex justify-center items-center gap-3  w-full border border-black py-4 px-12 group hover:bg-white hover:text-red-500 transition-all duration-200 ease-out hover:scale-105 md:col-span-2 lg:col-span-1">
+                    <div
+                        class="flex justify-center items-center w-12 h-12 bg-white group-hover:bg-red-500 group-hover:text-white border border-black rounded-full text-xl">
+                        <i class="bi bi-boxes"></i>
+                    </div>
+                    <p class="text-2xl font-medium">For Kid</p>
+                </div>
+                <div
+                    class="flex justify-center items-center gap-3 w-full border border-black py-4 px-12 group hover:bg-white hover:text-red-500 transition-all duration-200 ease-out hover:scale-105 md:col-span-3 lg:col-span-1">
+                    <div
+                        class="flex justify-center items-center w-12 h-12 bg-white group-hover:bg-red-500 group-hover:text-white border border-black rounded-full text-xl">
+                        <i class="bi bi-emoji-surprise"></i>
+                    </div>
+                    <p class="text-2xl font-medium">Horror</p>
+                </div>
+                <div
+                    class="flex justify-center items-center gap-3 w-full border border-black py-4 px-12 group hover:bg-white hover:text-red-500 transition-all duration-200 ease-out hover:scale-105 md:col-span-3 lg:col-span-1">
+                    <div
+                        class="flex justify-center items-center w-12 h-12 bg-white group-hover:bg-red-500 group-hover:text-white border border-black rounded-full text-xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <p class="text-2xl font-medium">Loved</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+            <div class="col-span-1 lg:col-span-3 order-1">
+                <h2 class="text-xl font-semibold">Featured</h2>
+                <hr class="border-red-400 w-[60px] mt-1">
+            </div>
+
+            <!-- GRID DES PRODUITS -->
+            <div class="grid grid-cols-2 gap-5 order-2 lg:col-span-2">
+
+                <!-- PRODUCT 1 -->
+                <div class="space-y-2 text-center mx-auto bg-gray-200 w-full">
+                    <div class="space-y-2">
+                        <img src="./img/livre1.png" class="w-56 mx-auto">
+                        <h3 class="font-medium">Frank Enstin</h3>
+                        <p class="text-sm text-gray-400">By Nicolas Sumpir</p>
+                        <div>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
+                                class="bi bi-star"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="text-red-400">14 400 F CFA</p>
+                        <button class="px-4 py-2 bg-red-400 text-white rounded-md">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 2 -->
+                <div class="space-y-2 text-center mx-auto bg-gray-200 w-full">
+                    <img src="./img/livre2.png" class="w-56 mx-auto">
+                    <div class="space-y-2">
+                        <h3 class="font-medium">Thousand Seed</h3>
+                        <p class="text-sm text-gray-400">By Nicolas Sumpir</p>
+                        <div>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
+                                class="bi bi-star"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="text-red-400">14 400 F CFA</p>
+                        <button class="px-4 py-2 bg-red-400 text-white rounded-md">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 3 -->
+                <div class="space-y-2 text-center mx-auto bg-gray-200 w-full">
+                    <img src="./img/livre3.png" class="w-56 mx-auto">
+                    <div class="space-y-2">
+                        <h3 class="font-medium">Thousand Seed</h3>
+                        <p class="text-sm text-gray-400">By Nicolas Sumpir</p>
+                        <div>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
+                                class="bi bi-star"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="text-red-400">14 400 F CFA</p>
+                        <button class="px-4 py-2 bg-red-400 text-white rounded-md">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 4 -->
+                <div class="space-y-2 text-center mx-auto bg-gray-200 w-full">
+                    <img src="./img/livre4.png" class="w-56 mx-auto">
+                    <div class="space-y-2">
+                        <h3 class="font-medium">Thousand Seed</h3>
+                        <p class="text-sm text-gray-400">By Nicolas Sumpir</p>
+                        <div>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
+                                class="bi bi-star"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="text-red-400">14 400 F CFA</p>
+                        <button class="px-4 py-2 bg-red-400 text-white rounded-md">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 5 -->
+                <div class="space-y-2 text-center mx-auto bg-gray-200 w-full">
+                    <img src="./img/livre5.png" class="w-56 mx-auto">
+                    <div class="space-y-2">
+                        <h3 class="font-medium">Thousand Seed</h3>
+                        <p class="text-sm text-gray-400">By Nicolas Sumpir</p>
+                        <div>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
+                                class="bi bi-star"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="text-red-400">14 400 F CFA</p>
+                        <button class="px-4 py-2 bg-red-400 text-white rounded-md">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 6 -->
+                <div class="space-y-2 text-center mx-auto bg-gray-200 w-full">
+                    <img src="./img/livre2.png" class="w-56 mx-auto">
+                    <div class="space-y-2">
+                        <h3 class="font-medium">Thousand Seed</h3>
+                        <p class="text-sm text-gray-400">By Nicolas Sumpir</p>
+                        <div>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
+                                class="bi bi-star"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="text-red-400">14 400 F CFA</p>
+                        <button class="px-4 py-2 bg-red-400 text-white rounded-md">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="space-y-5 order-3 lg:col-span-1">
+
+                <div class="flex flex-col">
+                    <h2 class="w-full text-xl font-semibold">Best Selling Products</h2>
+                    <hr class="border-red-400 w-[60px] mt-1">
+                </div>
+
+                <div class="flex gap-3">
+                    <img src="./img/livre1.png" class="w-20 object-center">
+                    <div class="space-y-2">
+                        <h3 class="font-medium">Frank Enstin</h3>
+                        <p class="text-sm text-gray-400">By Nicolas Sumpir</p>
+                        <div>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
+                                class="bi bi-star"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="text-red-400">14 400 F CFA</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-3">
+                    <img src="./img/livre2.png" class="w-20 object-center">
+                    <div class="space-y-2">
+                        <h3 class="font-medium">Thousand Seed</h3>
+                        <p class="text-sm text-gray-400">By Nicolas Sumpir</p>
+                        <div>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
+                                class="bi bi-star"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="text-red-400">14 400 F CFA</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-3">
+                    <img src="./img/livre3.png" class="w-20 object-center">
+                    <div class="space-y-2">
+                        <h3 class="font-medium">Thousand Seed</h3>
+                        <p class="text-sm text-gray-400">By Nicolas Sumpir</p>
+                        <div>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
+                                class="bi bi-star"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="text-red-400">14 400 F CFA</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="grid grid-cols-1 md:grid-cols-3 text-center gap-10 w-full h-full p-10 mt-10">
+            <div class="flex flex-col justify-center items-center w-full h-full p-10 bg-[#d5e9ed] rounded-md">
+                <img src="./img/liv1.png" alt="" class="w-40 object-center">
+                <button class="px-4 py-2 bg-red-400 text-white font-medium rounded-md mt-2">45% Off</button>
+                <p>Get 20% off on your first order</p>
+            </div>
+            <div class="flex flex-col justify-center items-center w-full h-full p-10 bg-[#faf4f0] rounded-md">
+                <img src="./img/liv2.png" alt="" class="w-40 object-center">
+                <button class="px-4 py-2 bg-red-400 text-white font-medium rounded-md mt-2">45% Off</button>
+                <p>Get 20% off on your first order</p>
+            </div>
+            <div class="flex flex-col justify-center items-center w-full h-full p-10 bg-[#ebebe8] rounded-md">
+                <img src="./img/liv3.webp" alt="" class="w-40 object-center">
+                <button class="px-4 py-2 bg-red-400 text-white font-medium rounded-md mt-2">45% Off</button>
+                <p>Get 20% off on your first order</p>
+            </div>
+        </section>
+
+        <section class="hidden md:grid md:grid-cols-3 lg:grid-cols-5 p-10 w-full h-full bg-[#ebebe8] mt-10">
+
+            <div class="col-span-5 flex flex-col items-center text-center m-10">
+                <h2 class="text-3xl font-semibold">Spécial Products</h2>
+                <hr class="border-red-400 w-[60px] mt-5">
+            </div>
+
+
+            <div class="flex flex-col">
+                <img src="./img/spec1.png" class="w-3/4 h-[400px] object-center">
+                <h3 class="font-semibold">Spécial Product 1</h3>
+                <p class="text-gray-500">by Author Name</p>
+                <p class="text-gray-500 font-medium">
+                    <span class="line-through">17 500F FCFA </span>
+                    <span class=" text-red-500 ">20% off</span>
+                </p>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/spec2.png" class="w-3/4 h-[400px] object-center">
+                <h3 class="font-semibold">Spécial Product 2</h3>
+                <p class="text-gray-500">by Author Name</p>
+                <p class="text-gray-500 font-medium">
+                    <span class="line-through">17 500F FCFA </span>
+                    <span class=" text-red-500 ">20% off</span>
+                </p>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/spec3.png" class="w-3/4 h-[400px] object-center">
+                <h3 class="font-semibold">Spécial Product 3</h3>
+                <p class="text-gray-500">by Author Name</p>
+                <p class="text-gray-500 font-medium">
+                    <span class="line-through">17 500F FCFA </span>
+                    <span class=" text-red-500 ">20% off</span>
+                </p>
+            </div>
+
+            <div class="hidden lg:flex flex-col">
+                <img src="./img/spec4.png" class="w-3/4 h-[400px] object-center">
+                <h3 class="font-semibold">Spécial Product 4</h3>
+                <p class="text-gray-500">by Author Name</p>
+                <p class="text-gray-500 font-medium">
+                    <span class="line-through">17 500F FCFA </span>
+                    <span class=" text-red-500 ">20% off</span>
+                </p>
+            </div>
+
+            <div class="hidden lg:flex flex-col">
+                <img src="./img/spec5.png" class="w-3/4 h-[400px] object-center">
+                <h3 class="font-semibold">Spécial Product 5</h3>
+                <p class="text-gray-500">by Author Name</p>
+                <p class="text-gray-500 font-medium">
+                    <span class="line-through">17 500F FCFA </span>
+                    <span class=" text-red-500 ">20% off</span>
+                </p>
+            </div>
+
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-[1fr_3fr_1fr] gap-5 p-10">
+
+            <div class="col-span-1 lg:col-span-3 flex flex-col items-center text-center m-10">
+                <h2 class="text-3xl font-semibold">Blog Updates</h2>
+                <hr class="border-red-400 w-[60px] mt-5">
+            </div>
+
+            <div class="flex flex-col space-y-5">
+                <div class="flex flex-col md:flex-row gap-5">
+                    <img src="./img/blog.jpg" class="w-full md:w-80 object-center">
+                    <div class="flex flex-col space-y-4">
+                        <p class="text-sm text-red-500">May 30, 2018 / Live Style</p>
+                        <h3 class="text-xl font-medium">Book News Missed This Week</h3>
+                        <span>by Admin</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-5">
+                    <img src="./img/blog2.jpg" class="w-full md:w-80 object-center">
+                    <div class="flex flex-col space-y-4">
+                        <p class="text-sm text-red-500">May 30, 2018 / Live Style</p>
+                        <h3 class="text-xl font-medium">Book News Missed This Week</h3>
+                        <span>by Admin</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-5">
+                    <img src="./img/blog3.jpg" class="w-full md:w-80 object-center">
+                    <div class="flex flex-col space-y-4">
+                        <p class="text-sm text-red-500">May 30, 2018 / Live Style</p>
+                        <h3 class="text-xl font-medium">Book News Missed This Week</h3>
+                        <span>by Admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden lg:block">
+                <img src="./img/blog4.jpg" class="w-full h-[400px] object-cover object-center">
+                <p class="text-sm text-red-500 mt-4">April 19, 2017 / Fashion</p>
+                <h3 class="text-xl font-medium">Lorem ipsum dolor sit amet consectetur.</h3>
+                <span>by Admin</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-center text-white bg-[#f2c2c3] space-y-7 p-10">
+                <h2 class="text-3xl font-semibold">Stay In Touch With Our Updates</h2>
+                <p>Newsletter to get in touch</p>
+
+                <div>
+                    <input type="search" placeholder="Search books..." class="p-3 bg-[#f2c2c3] outline-none">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+
+                <hr class="w-full border-gray-300 mt-6">
+            </div>
+
+        </section>
+
+        <section class="grid grid-cols-1 gap-5 md:grid-cols-3 bg-[#fcf5eb] p-10">
+            <div class="flex items-center gap-10">
+                <img src="./img/icon1.png" alt="" class="w-20 object-cover">
+                <div class="">
+                    <h3 class="font-semibold">Free Shipping</h3>
+                    <p class="text-gray-500">Select bettwen awide range of texbook and media.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-10">
+                <img src="./img/icon2.png" alt="" class="w-20 object-cover">
+                <div class="">
+                    <h3 class="font-semibold">Free Shipping</h3>
+                    <p class="text-gray-500">Enjoy free shipping and our fast delivery service.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-10">
+                <img src="./img/icon3.png" alt="" class="w-20 object-cover">
+                <div class="">
+                    <h3 class="font-semibold">Free Shipping</h3>
+                    <p class="text-gray-500">Get nice discount on our top rated product every sunday.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:space-x-10 p-10 bg-gray-100">
+            <div class="space-y-1">
+                <div class="mb-5">
+                    <h3 class="text-xl font-medium">Contact us</h3>
+                    <hr class="border border-red-500 w-[50px] mt-5">
+                </div>
+                <div class="flex items-center gap-4">
+                    <i class="bi bi-geo-alt-fill text-2xl"></i>
+                    <p>1998 Well Street 707, <br> Washington DC, USA</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-envelope text-2xl"></i>
+                    <p>bookmart@domain.com <br> support@gmail.com</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-phone text-2xl"></i>
+                    <p>(84) 0123 456 789 <br> (84) 00123 456 789</p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-xl font-medium">Information</h3>
+                    <hr class="border border-red-500 w-[50px] mt-5">
+                </div>
+                <p>Contact Us</p>
+                <p>Site Map</p>
+                <p>Privacy Policy</p>
+                <p>About Us</p>
+                <p>Customer service</p>
+            </div>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-xl font-medium">My Account</h3>
+                    <hr class="border border-red-500 w-[50px] mt-5">
+                </div>
+                <p>Sign In</p>
+                <p>View Cart</p>
+                <p>My Wishlist</p>
+                <p>Track My Order</p>
+                <p>Help</p>
+            </div>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-xl font-medium">Instagram</h3>
+                    <hr class="border border-red-500 w-[50px] mt-5">
+                </div>
+                <div class="flex gap-5">
+                    <img src="./img/ins1.png" alt="" class="w-24">
+                    <img src="./img/ins2.png" alt="" class="w-24">
+                    <img src="./img/ins3.png" alt="" class="w-24">
+                </div>
+                <p class="text-red-500">7 Days A Weeks From 8.00 Am To 5 Pm</p>
+                <div class="flex gap-5 text-3xl">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+</html>

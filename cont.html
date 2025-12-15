@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="bg-white px-10 py-5 shadow-lg relative">
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+        <!-- SIDEBAR MOBILE -->
+        <nav class="block md:hidden fixed left-0 top-0 w-full h-[220px] bg-white shadow-lg transform -translate-y-full 
+                   peer-checked:translate-y-[43%] transition-all duration-500 z-50">
+
+            <ul class="flex flex-col space-y-5 p-6 font-medium">
+                <li>
+                    <a href="./index.html" class="hover:underline hover:text-red-600">Home</a>
+                </li>
+                <li>
+                    <a href="./shop.html" class="hover:underline hover:text-red-600">Shop</a>
+                </li>
+                <li>
+                    <a href="./post.html" class="hover:underline hover:text-red-600">Post</a>
+                </li>
+                <li>
+                    <a href="./cont.html" class="hover:underline hover:text-red-600">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="flex md:hidden justify-between font-bold text-3xl relative z-20">
+            <h1>BOOTIN</h1>
+
+            <label for="menu-toggle" class="cursor-pointer">
+                <i class="bi bi-list text-5xl"></i>
+            </label>
+        </div>
+
+
+        <div class="hidden md:block">
+
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-1.5 border-b">
+                    <input type="search" placeholder="Search books.." class="p-3 outline-none">
+                    <i class="bi bi-search"></i>
+                </div>
+                <h1 class="font-bold text-3xl">BOOTIN</h1>
+
+                <div class="flex gap-1.5 font-semibold">
+                    <div class="relative border-r pr-4 mr-4">
+                        <i class="bi bi-heart text-xl"></i>
+                        <p
+                            class="bg-red-600 w-[22px] rounded-full text-center text-sm text-white absolute bottom-[21px] right-[3px]">
+                            3</p>
+                    </div>
+                    <div class="relative border-r pr-4 mr-4">
+                        <i class="bi bi-bookmark text-xl"></i>
+                        <p
+                            class="bg-red-600 w-[22px] rounded-full text-center text-sm text-white absolute bottom-[21px] right-[3px]">
+                            0</p>
+                    </div>
+                    <i class="bi bi-person-fill text-xl"></i>
+                </div>
+            </div>
+
+            <nav class="flex justify-center w-full mt-10 text-lg text-gray-700 font-medium">
+                <ul class="flex space-x-7">
+                    <li>
+                        <a href="./index.html" class="hover:underline hover:text-red-600">Home</a>
+                    </li>
+                    <li>
+                        <a href="./shop.html" class="hover:underline hover:text-red-600">Shop</a>
+                    </li>
+                    <li>
+                        <a href="./post.html" class="hover:underline hover:text-red-600">Post</a>
+                    </li>
+                    <li>
+                        <a href="./cont.html" class="hover:underline hover:text-red-600 underline text-red-600"
+                            aria-current="page">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="relative h-[200px] lg:h-full border-t border-black">
+            <img src="./img/bg.jpg" alt="" class="w-full h-full object-center object-cover">
+
+            <h2 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl md:text-6xl font-bold text-white">
+                Contact Us
+            </h2>
+        </section>
+
+        <section class="p-5 md:p-10">
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-10 mt-10">
+
+                <!-- INFOS -->
+                <div class="space-y-5">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold">Address</h2>
+                        <p>14 LE Gounlburn St, Sydney 1198NSA.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold">Phone</h2>
+                        <p>(+089) 19918989</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold">Email</h2>
+                        <p>Support@domain.com</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold">Opening time</h2>
+                        <p>8:00AM - 10:00Pm, Sunday close</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold">Follow us on</h2>
+                        <div class="flex gap-3 text-xl">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAP -->
+                <div class="w-full h-[250px] md:h-[350px] lg:h-full">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12231.869871250226!2d2.2585593136002378!3d13.220763707107324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11d0177d49ce8e73%3A0x3b1d2f4ccdf3eeb!2sCit%C3%A9%20de%20L'innovation%20de%20Sador%C3%A9!5e0!3m2!1sfr!2sne!4v1765668607259!5m2!1sfr!2sne"
+                        class="w-full h-full rounded-lg" style="border:0;" allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-5 mt-10">
+
+                <!-- FORM -->
+                <div class="w-full">
+                    <h2 class="text-3xl font-bold">Get in touch</h2>
+
+                    <div class="mt-10 space-y-3">
+                        <div class="flex gap-3">
+                            <input type="text" placeholder="Name" class="w-full p-2 bg-gray-200 outline-none">
+
+                            <input type="text" placeholder="Email" class="w-full p-2 bg-gray-200 outline-none">
+                        </div>
+
+                        <input type="text" placeholder="Subject" class="w-full p-2 bg-gray-200 outline-none">
+
+                        <textarea placeholder="Comment" class="w-full px-2 py-4 bg-gray-200 outline-none"></textarea>
+
+                        <button class="p-3 mt-3 bg-red-400 text-white rounded">
+                            Send Message
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CONTACTUS -->
+                <div class="hidden md:flex items-center justify-end">
+                    <h2 class="text-4xl md:text-6xl font-bold text-gray-200
+                       [writing-mode:vertical-rl] rotate-180 text-end">
+                        CONTACTUS
+                    </h2>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:space-x-10 p-10 bg-gray-100">
+        <div class="space-y-1">
+            <div class="mb-5">
+                <h3 class="text-xl font-medium">Contact us</h3>
+                <hr class="border border-red-500 w-[50px] mt-5">
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="bi bi-geo-alt-fill text-2xl"></i>
+                <p>1998 Well Street 707, <br> Washington DC, USA</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-envelope text-2xl"></i>
+                <div class="flex flex-col">
+                    <p>bookmart@domain.com</p>
+                    <p>support@gmail.com</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-phone text-2xl"></i>
+                <div class="flex flex-col">
+                    <p>(84) 0123 456 789</p>
+                    <p>(84) 00123 456 789</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <div>
+                <h3 class="text-xl font-medium">Information</h3>
+                <hr class="border border-red-500 w-[50px] mt-5">
+            </div>
+            <p>Contact Us</p>
+            <p>Site Map</p>
+            <p>Privacy Policy</p>
+            <p>About Us</p>
+            <p>Customer service</p>
+        </div>
+        <div class="space-y-4">
+            <div>
+                <h3 class="text-xl font-medium">My Account</h3>
+                <hr class="border border-red-500 w-[50px] mt-5">
+            </div>
+            <p>Sign In</p>
+            <p>View Cart</p>
+            <p>My Wishlist</p>
+            <p>Track My Order</p>
+            <p>Help</p>
+        </div>
+        <div class="space-y-4">
+            <div>
+                <h3 class="text-xl font-medium">Instagram</h3>
+                <hr class="border border-red-500 w-[50px] mt-5">
+            </div>
+            <div class="flex gap-5">
+                <img src="./img/ins1.png" alt="" class="w-14">
+                <img src="./img/ins2.png" alt="" class="w-14">
+                <img src="./img/ins3.png" alt="" class="w-14">
+            </div>
+            <p class="text-red-500">7 Days A Weeks From 8.00 Am To 5 Pm</p>
+            <div class="flex gap-5 text-3xl">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
