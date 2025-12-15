@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 BOOTIN – Book Store Website
 
-## Getting Started
+BOOTIN est un **site vitrine e‑commerce de livres** entièrement responsive, réalisé en **HTML5 + Tailwind CSS**.
+Le projet met en avant une boutique moderne avec une navigation fluide, des pages structurées et une bonne expérience utilisateur sur **mobile, tablette et desktop**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Pages du projet
+
+* **Home (`index.html`)**
+  Page d’accueil avec sections Featured, collections de livres, promotions et footer complet.
+
+* **Shop (`shop.html`)**
+  Page boutique avec sidebar (recherche, catégories, filtres) et affichage des livres en grille responsive.
+
+* **Post (`post.html`)**
+  Page blog/article avec :
+
+  * Sidebar (search, catégories, recent posts, tags, archives)
+  * Contenu article + galerie d’images
+  * Navigation entre articles
+  * Section commentaires
+
+* **Contact (`cont.html`)**
+  Page contact comprenant :
+
+  * Informations de contact
+  * Carte Google Maps intégrée
+  * Formulaire de contact responsive
+
+---
+
+## ✨ Fonctionnalités
+
+* 📱 **Design 100% responsive** (mobile / tablette / desktop)
+* 🎨 Interface moderne avec **Tailwind CSS**
+* 📂 Navigation multi‑pages claire
+* 🍔 Menu mobile avec sidebar animée
+* 🔍 Barres de recherche (UI)
+* 📰 Blog / posts avec sidebar dynamique
+* 🗺️ Google Maps intégrée (page Contact)
+* 🦶 Footer complet avec réseaux sociaux
+
+---
+
+## 🛠️ Technologies utilisées
+
+* **HTML5**
+* **Tailwind CSS (CDN)**
+* **Bootstrap Icons**
+* **Font Awesome**
+* **Google Maps Embed**
+
+---
+
+## 📁 Structure du projet
+
+```
+BOOTIN/
+│
+├── index.html        # Home page
+├── shop.html         # Shop page
+├── post.html         # Blog / Post page
+├── cont.html         # Contact page
+│
+├── img/              # Images du projet
+│
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ▶️ Lancer le projet
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Cloner ou télécharger le projet
+2. Ouvrir le fichier `index.html` dans votre navigateur
+3. Naviguer entre les pages via le menu
 
-## Learn More
+*Aucune installation ou build requis (Tailwind via CDN)*
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Objectif du projet
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Ce projet a été réalisé dans un but **pédagogique** afin de :
 
-## Deploy on Vercel
+* Pratiquer **Tailwind CSS**
+* Comprendre le **responsive design**
+* Structurer un site multi‑pages
+* Créer une UI moderne sans JavaScript complexe
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👨‍💻 Auteur
+
+Projet réalisé par **Yacine Issay** ✨
+
+---
+
+🔥 *N’hésite pas à améliorer le projet (JS, backend, panier dynamique, etc.)*
